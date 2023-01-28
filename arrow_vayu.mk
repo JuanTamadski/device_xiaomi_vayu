@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common ArrowOS configurations
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/corvus/config/common.mk)
 
 PRODUCT_NAME := arrow_vayu
 PRODUCT_DEVICE := vayu
@@ -29,6 +29,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/vayu_global/vayu:12/RKQ1.200826.002/V13.0.5.0.SJUMIXM:user/release-keys
 
-# ArrowOS additions
-DEVICE_MAINTAINER := K001droid and raghavt20
+# Corvus Official
+CORVUS_MAINTAINER := JuanTamadski
+RAVEN_LAIR := Official
+
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Pixel charging animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+
 
